@@ -1,0 +1,12 @@
+public class ExceptionExample2 {
+    public static void main(String[] args) throws Exception {
+        try {
+            int[] m = new int[2];
+            m[8] = 5;
+            System.out.println(m[8]);}
+
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Сообщение во время ArrayIndexOutOfBoundsException");
+        }
+    }
+}
