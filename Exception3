@@ -1,0 +1,20 @@
+Перехватить исключение, возникающее при выполнении кода:
+ int a = 42 / 0;
+Вывести на экран тип перехваченного исключения.
+
+public class ExceptionExample2 { 
+
+    public static void main(String[] args) throws Exception {
+
+       System.out.println("Сообщение до обработки исключения");
+        try { int a = 42 / 0;}
+
+        catch (ArithmeticException e) {
+            System.out.println("Сообщение во время ArithmeticException");
+        }
+    }
+}
+
+//!!!!!!!!! если надо узнать тип Exceptiona
+     //   catch (Exception e) {
+      //  System.out.println(e);
