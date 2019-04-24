@@ -1,0 +1,18 @@
+Перехватить исключение (и вывести его на экран), указав его тип, возникающее при выполнении кода:
+
+public class ExceptionExample2 {
+
+    public static void main(String[] args) throws Exception {
+       try {
+       
+            String s = null;
+            String m = s.toLowerCase();
+            System.out.println(m);
+            
+        } catch (NullPointerException e) {
+        
+           System.out.println("Сooбщение во время NullPointerException e");
+        }
+    }
+}
+
